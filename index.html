@@ -599,50 +599,256 @@
             .sidebar {
                 height: auto;
                 flex-direction: column;
-                gap: 20px;
-                padding: 20px;
+                gap: 15px;
+                padding: 15px;
             }
 
             .profile-section {
                 border-right: none;
                 border-bottom: 2px solid rgba(255,255,255,0.2);
                 padding-right: 0;
-                padding-bottom: 20px;
+                padding-bottom: 15px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-photo {
+                width: 100px;
+                height: 100px;
+                font-size: 40px;
+                border: 4px solid rgba(255,255,255,0.3);
+            }
+
+            .profile-name {
+                font-size: 22px;
+            }
+
+            .profile-title {
+                font-size: 13px;
             }
 
             .nav-menu {
                 justify-content: center;
+                gap: 6px;
             }
 
             .nav-link {
-                font-size: 13px;
-                padding: 10px 15px;
+                font-size: 12px;
+                padding: 8px 12px;
             }
 
             .main-content {
                 margin-top: auto;
-                padding: 30px 20px;
+                padding: 20px 15px 70px 15px;
             }
 
             .content-section {
-                padding: 30px 25px;
+                padding: 25px 20px;
+                border-radius: 12px;
             }
 
             .section-header {
-                font-size: 28px;
+                font-size: 24px;
+                margin-bottom: 20px;
+                padding-bottom: 12px;
             }
 
             .contact-bar {
                 flex-direction: column;
-                gap: 15px;
+                gap: 12px;
+                padding: 20px;
+            }
+
+            .contact-item {
+                font-size: 14px;
+                word-break: break-word;
             }
 
             .info-grid {
                 grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .info-card {
+                padding: 15px;
+            }
+
+            .objective-text {
+                font-size: 15px;
+                padding: 20px;
+            }
+
+            .education-timeline {
+                padding-left: 30px;
+            }
+
+            .education-item {
+                padding: 20px;
+                margin-bottom: 25px;
+            }
+
+            .education-item::before {
+                left: -38px;
+                width: 14px;
+                height: 14px;
+            }
+
+            .education-title {
+                font-size: 20px;
+            }
+
+            .education-subtitle {
+                font-size: 15px;
+            }
+
+            .education-details li {
+                font-size: 14px;
+                padding-left: 20px;
             }
 
             .awards-grid {
                 grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .award-card {
+                padding: 20px;
+            }
+
+            .award-icon {
+                font-size: 32px;
+            }
+
+            .award-text {
+                font-size: 14px;
+            }
+
+            .activities-list li {
+                font-size: 14px;
+                padding: 15px 20px 15px 45px;
+                margin-bottom: 12px;
+            }
+
+            .activities-list li::before {
+                left: 20px;
+                font-size: 20px;
+            }
+
+            .skills-grid {
+                gap: 10px;
+            }
+
+            .skill-badge {
+                padding: 10px 18px;
+                font-size: 13px;
+            }
+
+            .reference-card {
+                padding: 25px 20px;
+            }
+
+            .reference-name {
+                font-size: 22px;
+            }
+
+            .reference-position {
+                font-size: 14px;
+            }
+
+            .reference-contact {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sidebar {
+                padding: 12px;
+            }
+
+            .profile-photo {
+                width: 80px;
+                height: 80px;
+                font-size: 32px;
+            }
+
+            .profile-name {
+                font-size: 19px;
+            }
+
+            .profile-title {
+                font-size: 12px;
+            }
+
+            .nav-link {
+                font-size: 11px;
+                padding: 7px 10px;
+            }
+
+            .main-content {
+                padding: 15px 10px 70px 10px;
+            }
+
+            .content-section {
+                padding: 20px 15px;
+            }
+
+            .section-header {
+                font-size: 22px;
+            }
+
+            .contact-bar {
+                padding: 15px;
+            }
+
+            .contact-item {
+                font-size: 13px;
+            }
+
+            .objective-text {
+                font-size: 14px;
+                padding: 15px;
+            }
+
+            .education-timeline {
+                padding-left: 25px;
+            }
+
+            .education-item {
+                padding: 15px;
+            }
+
+            .education-item::before {
+                left: -33px;
+            }
+
+            .education-title {
+                font-size: 18px;
+            }
+
+            .education-subtitle {
+                font-size: 14px;
+            }
+
+            .education-details li {
+                font-size: 13px;
+            }
+
+            .award-card {
+                padding: 18px;
+            }
+
+            .activities-list li {
+                font-size: 13px;
+                padding: 12px 15px 12px 40px;
+            }
+
+            .activities-list li::before {
+                left: 15px;
+            }
+
+            .skill-badge {
+                padding: 8px 16px;
+                font-size: 12px;
             }
         }
     </style>
@@ -792,7 +998,7 @@
     <div class="education-timeline">
      <div class="education-item">
       <div class="education-year">
-       AY 2024–Present
+       AY 2024��Present
       </div>
       <div class="education-title">
        Navotas Polytechnic College
@@ -887,7 +1093,7 @@
        📜
       </div>
       <div class="award-text">
-       Certificate of Academic Excellence – SHS Grade 11 (High Honors, SY 2022–2023)
+       Certificate of Academic Excellence - SHS Grade 11 (High Honors, SY 2022–2023)
       </div>
      </div>
      <div class="award-card">
@@ -912,7 +1118,7 @@
     <h2 class="section-header">Leadership &amp; Extracurricular Activities</h2>
     <ul class="activities-list">
      <li>Class Representative of Section FM 1C, 2nd Semester, 1st Year – Navotas Polytechnic College</li>
-     <li>2024 Philippines–South Korea International Youth Exchange Program – Delegate</li>
+     <li>2024 Philippines–South Korea International Youth Exchange Program - Delegate</li>
      <li>Interact Club of Tanza National High School – Director of Basic Education and Literacy</li>
      <li>The Sparks – Official School Publication (English) – Editor-in-Chief (2 consecutive years)</li>
      <li>Grade 12 – Class Vice-President</li>
@@ -1065,5 +1271,5 @@
             });
         }
     </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a7066afa4e320e1',t:'MTc2NDU2OTIxMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a706b8b127e20e1',t:'MTc2NDU2OTQxMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
